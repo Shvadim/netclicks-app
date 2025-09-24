@@ -1,0 +1,21 @@
+.content-sidebar__info--item {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-sidebar__info--item h5,
+.content-sidebar__info--item p {
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.content-sidebar__info--item h5 {
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.content-sidebar__info--item p {
+    font-weight: 400;
+    margin: 0;
+}

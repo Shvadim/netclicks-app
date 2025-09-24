@@ -2,21 +2,9 @@
   <div class="content-sidebar__info">
     <h4 class="content-sidebar__info--title">Подборки фильмов и сериалов</h4>
     <div class="content-sidebar__info--wrapper">
-      <div class="content-sidebar__info--item">
-        <h5>Топ-250</h5>
-        <p>Подборка фильмов и сериалов с наивысшими оценками зрителей</p>
-      </div>
-      <div class="content-sidebar__info--item">
-        <h5>Посмеяться от души</h5>
-        <p>Подборка комедий, которые помогут расслабиться после работы</p>
-      </div>
-      <div class="content-sidebar__info--item">
-        <h5>Запутанный сюжет</h5>
-        <p>
-          Триллеры и прключения с запутанным и интересным сюжетом. Невозможно
-          оторваться!
-        </p>
-      </div>
+      @for( sel of selections; track sel.id) {
+      <app-selection [select]="sel"></app-selection>
+      }
     </div>
   </div>
   <div class="content-sidebar__footer">

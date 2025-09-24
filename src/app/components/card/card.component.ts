@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
-
-type TitleType = string | number
+import { Film } from "../../models/film.model";
 
 @Component({
   selector: 'app-card',
@@ -9,5 +8,6 @@ type TitleType = string | number
   styleUrl: './card.component.css'
 })
 export class CardComponent {
-  @Input() title: TitleType = ''
+  // ! - означает что мы точно передадим значение. и ts не ругается
+  @Input() film!: Film;
 }

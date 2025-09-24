@@ -7,8 +7,9 @@
         <div class="content-main">
           <h2 class="content-main__title">Результаты поиска</h2>
           <div class="content-cards">
-            <app-card [title]="123"></app-card>
-            <app-card [title]="'Марсианин2'"></app-card>
+            @for (film of films; track film.id) {
+            <app-card [film]="film"></app-card>
+            }
           </div>
         </div>
         <app-sidebar></app-sidebar>
