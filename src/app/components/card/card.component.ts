@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Film } from "../../models/film.model";
 
 @Component({
@@ -7,7 +7,14 @@ import { Film } from "../../models/film.model";
   templateUrl: './card.component.html',
   styleUrl: './card.component.css'
 })
-export class CardComponent {
+export class CardComponent implements OnInit {
   // ! - означает что мы точно передадим значение. и ts не ругается
   @Input() film!: Film;
+  public filmCategory: string[] = []
+  //
+
+  ngOnInit(): void {
+    this.filmCategory = this.film.category
+  }
+
 }

@@ -44,7 +44,12 @@
     line-height: 19px;
     margin-top: 0;
     margin-bottom: 11px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
 }
+
 .content-cards__item--rating {
     color: rgb(4, 163, 30);
     font-family: Inter, sans-serif;

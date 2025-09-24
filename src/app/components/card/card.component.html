@@ -6,6 +6,10 @@
     <h5>{{ film.title }},</h5>
     <span>{{ film.original }}</span>
   </div>
-  <p class="content-cards__item--description">{{ film.category }}</p>
+  <p class="content-cards__item--description">
+    @for( cat of filmCategory; track $index) {
+    <span>{{ cat }}</span>
+    }
+  </p>
   <p class="content-cards__item--rating">{{ film.rating }}</p>
 </a>
