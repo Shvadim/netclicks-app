@@ -8,6 +8,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { SearchComponent } from './components/search/search.component';
 import { SelectionComponent } from './components/selection/selection.component';
+import { CatalogPageComponent } from './pages/catalog-page/catalog-page.component';
+import { FilmPageComponent } from './pages/film-page/film-page.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { SelectionComponent } from './components/selection/selection.component';
     HeaderComponent,
     SidebarComponent,
     SearchComponent,
-    SelectionComponent
+    SelectionComponent,
+    CatalogPageComponent,
+    FilmPageComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
